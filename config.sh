@@ -1,4 +1,6 @@
-if [ !-d "/bin" ]; then 
+#!/bin/bash
+
+if [ ! -d "/bin" ]; then 
     mkdir bin 
 fi
 

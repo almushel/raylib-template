@@ -1,8 +1,8 @@
 # Raylib Template
 
-A minimalist CMake project that builds and links a local [raylib](https://github.com/raysan5/raylib) library and a simple program that opens a window and clears it to gray.
+A minimalist [CMake](https://cmake.org/) project that builds and links a local [raylib](https://github.com/raysan5/raylib) source folder and a simple program that opens a window and clears it to gray.
 
-It assumes there is a raylib folder at the same level as the project folder. Either clone the repository or unzip a release. Update the path `RAYLIB_DIR` in `src/CMakeLists` to point to it.
+It assumes there is a `raylib` folder at the same level as the project folder. Either clone the repository or unzip a release and update the value of `RAYLIB_DIR` in `src/CMakeLists` to point to it.
 
 ## Build and run
 
@@ -17,7 +17,7 @@ make
 ./game
 ```
 
-### Windows Makefile (Developer Command Prompt):
+### Windows Makefile:
 
 ```
 ./config
@@ -26,7 +26,7 @@ nmake
 ./game
 ```
 
-### Windows VS Project (Developer Command Prompt):
+### Windows VS Project:
 
 ```
 ./config
@@ -35,4 +35,4 @@ msbuild game.sln
 ./game
 ```
 
-You will need Visual Studio installed for `nmake`, `msbuild`, and the Developer Command Prompt.
+You will need Visual Studio installed for `nmake`, `msbuild`.
